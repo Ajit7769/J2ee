@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.jspiders.springcorexml.bean.CustomerBean"
+		name="customer1">
+
+		<property name="id" value="1" />
+		<property name="name" value="adinath" />
+		<property name="city" value="latur" />
+		<property name="mobile_no" value="7769554256" />
+		<property name="product">
+			<list>
+				<bean class="com.jspiders.springcorexml.bean.ProductBean"
+					name="product1">
+
+					<property name="id" value="1" />
+					<property name="name" value="t-shirt" />
+					<property name="price" value="350.00" />
+
+				</bean>
+
+				<bean class="com.jspiders.springcorexml.bean.ProductBean"
+					name="product2">
+
+					<property name="id" value="2" />
+					<property name="name" value="Gold Chain" />
+					<property name="price" value="5000.00" />
+				</bean>
+			</list>
+		</property>
+
+	</bean>
+
+	<bean class="com.jspiders.springcorexml.bean.CustomerBean"
+		name="customer2">
+
+		<property name="id" value="2" />
+		<property name="name" value="Kiran" />
+		<property name="city" value="Ausa" />
+		<property name="mobile_no" value="33659997555" />
+		<property name="product">
+			<list>
+				<bean class="com.jspiders.springcorexml.bean.ProductBean"
+					name="product2">
+
+					<property name="id" value="2" />
+					<property name="name" value="Gold Chain" />
+					<property name="price" value="5000.00" />
+				</bean>
+
+				<bean class="com.jspiders.springcorexml.bean.ProductBean"
+					name="product3">
+
+					<property name="id" value="3" />
+					<property name="name" value="Formal" />
+					<property name="price" value="500.00" />
+				</bean>
+			</list>
+		</property>
+
+	</bean>
+
+</beans>
+
+        
